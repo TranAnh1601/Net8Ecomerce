@@ -14,4 +14,8 @@ public partial class PhanCong
     public DateTime? NgayPc { get; set; }
 
     public bool? HieuLuc { get; set; }
+
+    public virtual NhanVien MaNvNavigation { get; set; } = null!;
+
+    public virtual PhongBan MaPbNavigation { get; set; } = null!;
 }

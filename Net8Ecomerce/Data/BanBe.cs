@@ -18,4 +18,8 @@ public partial class BanBe
     public DateTime NgayGui { get; set; }
 
     public string? GhiChu { get; set; }
+
+    public virtual HangHoa MaHhNavigation { get; set; } = null!;
+
+    public virtual KhachHang? MaKhNavigation { get; set; }
 }

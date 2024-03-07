@@ -24,4 +24,6 @@ public partial class GopY
     public string? TraLoi { get; set; }
 
     public DateOnly? NgayTl { get; set; }
+
+    public virtual ChuDe MaCdNavigation { get; set; } = null!;
 }

@@ -16,4 +16,6 @@ public partial class ChiTietHd
     public int SoLuong { get; set; }
 
     public double GiamGia { get; set; }
+
+    public virtual HangHoa MaHhNavigation { get; set; } = null!;
 }

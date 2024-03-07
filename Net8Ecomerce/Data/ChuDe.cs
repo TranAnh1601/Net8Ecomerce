@@ -10,4 +10,8 @@ public partial class ChuDe
     public string? TenCd { get; set; }
 
     public string? MaNv { get; set; }
+
+    public virtual ICollection<GopY> Gopies { get; set; } = new List<GopY>();
+
+    public virtual NhanVien? MaNvNavigation { get; set; }
 }

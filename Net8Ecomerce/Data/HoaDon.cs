@@ -30,4 +30,10 @@ public partial class HoaDon
     public string? MaNv { get; set; }
 
     public string? GhiChu { get; set; }
+
+    public virtual KhachHang MaKhNavigation { get; set; } = null!;
+
+    public virtual NhanVien? MaNvNavigation { get; set; }
+
+    public virtual TrangThai MaTrangThaiNavigation { get; set; } = null!;
 }

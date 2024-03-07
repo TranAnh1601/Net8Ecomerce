@@ -18,4 +18,8 @@ public partial class PhanQuyen
     public bool Xoa { get; set; }
 
     public bool Xem { get; set; }
+
+    public virtual PhongBan? MaPbNavigation { get; set; }
+
+    public virtual TrangWeb? MaTrangNavigation { get; set; }
 }
